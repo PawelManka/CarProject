@@ -97,7 +97,8 @@ public:
 private:
     int trig_pin_;
     int echo_pin_;
-    int distance_ = INF // to może nie działać
+    int distance_ = INF; // to może nie działać
+
 
 
 };

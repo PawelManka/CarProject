@@ -111,6 +111,7 @@ void ControlEngine::setSpeed() {
     }
 }
 
+
 void DistanceSensor::change_distance() {
 
     int czas;
