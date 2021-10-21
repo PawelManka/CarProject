@@ -5,15 +5,16 @@ void BluetoothModule::read_cmd() {
     while(serial_bt_.available() > 0) //tutaj pyta się programu bluetooth czy coś jest w serialu jeżeli tak to wchodzi do ifa
     {
         char c = (char)serial_bt_.read(); //czyta znak char
-        if (c == '\n') { //aplikacja kiedy kończy wysyłanie robi wysyła znak nowej lini wtedy
-            cmd_[cmdIndex_] = 0; //tutaj przyrównuje ostatni do 0 jako koniec zapisu trochę dziwne ale czasem siętak robi wg języka C xDDD
+        if (c == '\n') { //aplikacja kiedy kończy wysyłanie robi wysyła znak nowej lini
+            cmd_[cmdIndex_] = 0; //przyrównuje ostatni do 0 jako koniec zapisu, robi się tak robi wg języka C
             cmdIndex_ = 0;
         } else {
             cmd_[cmdIndex_] = c;
-            if (cmdIndex_ < 99) cmdIndex_++;
+            if (cmdIndex_ < 99) cmdIndex_++; // w przypadku gdy jest miejsce w tablicy przesuwa index,
         }
     }
 }
+
 
 void BluetoothModule::read_device_value() {
 
@@ -23,7 +24,7 @@ void BluetoothModule::read_device_value() {
         servo_value_ = atoi(cmd_ + 2);
     }else if( cmd_[0] == 'e'){
         device_to_change_ = 'e';
-        engine_value_ = atoi(cmd_ + 2);
+        engine_value_ = atoi(cmd_ + 2); // w funckji atoi() trzeba podać adres początku stringa (w języku c jest to  wskaźnik na pierwszy element tablicy, jeżeli chcemy wskaźnik na trzeci element dodajemy 2)
     }else if( cmd_[0] == 'r'){
         engine_gear_ = 'r';
     }else if( cmd_[0] == 'f'){
@@ -54,7 +55,7 @@ int BluetoothModule::getServoValue() const {
 
 void Engine::setSpeed() {
 
-    if(bt_.getDeviceToChange() == 'e') {
+    if(bt_.getDeviceToChange() == 'e') { //jeżeli urządzenie do zmiany pobrane z bluetootha to silnik:
         int speed = bt_.getEngineValue();
         speed_ = speed;
 

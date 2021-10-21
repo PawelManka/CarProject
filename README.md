@@ -16,6 +16,8 @@ Step by step (actions):
     Accumulator or powerbank (the more weightless the better), USB b cablem, 4 wheels, 4 spring, 1 under carriage.
     Multimeter, Resistors, 5 -> 3.3V converter
     
+    
+    
 2. Repairing necessery components:
     1. Powerbank by adding 2 wires + and -
     2. Engines by soldering wires with new wires.
@@ -27,9 +29,12 @@ Step by step (actions):
     Instead of these I link outer powerbank to BreadBord to +/- position and from +/- to vcc
     in H-bridge scheme
     
+
+    
 5. Making documentation and class architecture:
     I decide to create my project in Clion because of its easy nature in object oriented programming. 
-    After s
+
+
 6. Arduino wires: 
 
     * PIN:
