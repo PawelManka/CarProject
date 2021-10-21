@@ -1,4 +1,4 @@
-# testowy_1
+# CarProject
 
 Project description:
 The idea of the project was born in September 2021. The main goal was to create a car, controlled by bluetooth using Arduino. Additionally it helped to understand/learn the Arduino
