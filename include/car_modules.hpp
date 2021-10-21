@@ -106,7 +106,7 @@ public:
         return speed_;
     }
 
-protected:
+protected: // typu protected ułatwia pracę w małych projektach można też zrobić to przez typ private i stworzyć odpowiednie getery i setery
     int GND_pin_;
     int power_pin_;
     int control_pin_;
