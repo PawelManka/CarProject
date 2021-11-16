@@ -1,3 +1,71 @@
+# Projekt samochodu 
+Opis projektu:
+Idea projektu narodziła się we wrześniu 2021 roku. Głównym celem było stworzenie samochodu, sterowanego przez bluetooth za pomocą Arduino. 
+Cele poboczne: Projekty w C++, lutowanie i inne przydatne umiejętności.
+
+Cele i zamierzenia:
+1. Poznanie podstaw elektroniki poprzez Stworzenie samochodziku z wykorzystaniem części ze starej zabawki.
+2. Nauka tworzenia projektów w języku Cpp poprzez tworzenie projektu Clion oraz programowanie obiektowe.
+3. Zdobycie wiedzy na temat cyfrowych czujników i komponentów poprzez zastosowanie np. modułu Bluetooth, czujnika odległości.
+
+Krok po kroku (działania):
+
+1. stworzenie listy niezbędnych komponentów takich jak:
+Mikrokontroler, mostek H, modul bluetooth, bateria, kable, płytka stykowa, kabel od baterii do arduino, czujnik odległości,
+mały silnik (do sterowania lewą, prawą pozycją), silnik o większej mocy do sterowania prędkością samochodu.
+Akumulator lub powerbank (im bardziej nieważki tym lepiej), kabel USB b, 4 kółka, 4 sprężyny, 
+
+1 podwozie.
+Multimetr, rezystory, konwerter 5 -> 3. 3V
+
+2. Naprawa niezbędnych elementów:
+1. Powerbank poprzez dodanie 2 przewodów + i -
+2. Silniki poprzez lutowanie przewodów z nowymi przewodami.
+3. Kupowanie komponentów, które nie są nabyte (att_1)
+
+4. Zapoznanie się z silnikiem z "Kurs Arduino", stworzenie niezbędnego połączenia pomiędzy płytką Arduino, Powerbankiem, płytką stykową i silnikiem (att_2)
+att_2 przedstawia ideę podłączenia przewodów do Arduino. W naszym projekcie jest to trochę zmienione
+ponieważ moc baterii 9v nie wystarcza na 2 silniki.
+Zamiast nich łączę zewnętrzny powerbank z płytki stykowej do pozycji +/- i z +/- do vcc
+w układzie H-bridge
+
+
+5. Tworzenie dokumentacji i architektury klas:
+Zdecydowałem się na stworzenie mojego projektu w Clionie ze względu na jego łatwą naturę w programowaniu obiektowym.
+
+6. Przewody Arduino:
+
+* PIN:
+3 en_control_pin : niebieski
+4 GND_pin : biały
+5 PowerPin : żółty
+6 odległośćEcho czujnika : fioletowy
+7 dS trig : pomarańczowy + niebieski
+8 bt RX: zielony
+9 bt TX: szary
+10 -
+11: cen control_pin: czerwony
+12: styk GND: żółty
+13: power_pin: brąz
+5V: strona + : fioletowy
+GND - strona przeciwna: pomarańczowy
+
+GND : fioletowy BT
+
+7. Kontrolowanie odległości samochodu od obiektów z wykorzystaniem odpowiedniego czujnika. 
+ 1. Głównym celem tego zadania jest wyznaczenie pozycji od np. ściany i doprowadzenie samochodu do przejechania dokładnej odległości.
+ 2. Brak czujnika prędkości.
+
+    Zamierzenia:
+
+    1. Identfikacja transmitancji:
+    2. zbieranie danych - w celu zbierania danych należy sporządzić bazę danych z odległością samochodu od ściany (czas + mierzona odległość)
+    3. wykonać skrypt w Matlabie
+    4.. analiza różnic pomiędzy różnymi typami K - (const friction)
+
+
+
+
 # CarProject
 
 Project description:
@@ -63,6 +131,6 @@ Step by step (actions):
        1. collect data - to collect data it should be made a list in distant sensor object that acquire time and measured distance.
        2. make script in Matlab 
    2. analis diffrence between different type of K - (const friction) 
-   3. 
+
     
     
