@@ -53,14 +53,14 @@ GND - strona przeciwna: pomarańczowy
 GND : fioletowy BT
 
 7. Kontrolowanie odległości samochodu od obiektów z wykorzystaniem odpowiedniego czujnika. 
- 1. Głównym celem tego zadania jest wyznaczenie pozycji od np. ściany i doprowadzenie samochodu do przejechania dokładnej odległości.
- 2. Brak czujnika prędkości.
+  Głównym celem tego zadania jest wyznaczenie pozycji od np. ściany i doprowadzenie samochodu do przejechania dokładnej odległości.
+  Brak czujnika prędkości.
 
     Zamierzenia:
 
     1. Identfikacja transmitancji:
-    2. zbieranie danych - w celu zbierania danych należy sporządzić bazę danych z odległością samochodu od ściany (czas + mierzona odległość)
-    3. wykonać skrypt w Matlabie
+     1. zbieranie danych - w celu zbierania danych należy sporządzić bazę danych z odległością samochodu od ściany (czas + mierzona odległość)
+     2. wykonać skrypt w Matlabie
     4.. analiza różnic pomiędzy różnymi typami K - (const friction)
 
 
