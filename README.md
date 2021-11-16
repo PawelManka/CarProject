@@ -13,15 +13,13 @@ Krok po kroku (działania):
 1. stworzenie listy niezbędnych komponentów takich jak:
 Mikrokontroler, mostek H, modul bluetooth, bateria, kable, płytka stykowa, kabel od baterii do arduino, czujnik odległości,
 mały silnik (do sterowania lewą, prawą pozycją), silnik o większej mocy do sterowania prędkością samochodu.
-Akumulator lub powerbank (im bardziej nieważki tym lepiej), kabel USB b, 4 kółka, 4 sprężyny, 
-
-1 podwozie.
+Akumulator lub powerbank (im bardziej nieważki tym lepiej), kabel USB b, 4 kółka, 4 sprężyny, 1 podwozie.
 Multimetr, rezystory, konwerter 5 -> 3. 3V
 
 2. Naprawa niezbędnych elementów:
-1. Powerbank poprzez dodanie 2 przewodów + i -
-2. Silniki poprzez lutowanie przewodów z nowymi przewodami.
-3. Kupowanie komponentów, które nie są nabyte (att_1)
+  1. Powerbank poprzez dodanie 2 przewodów + i -
+  2. Silniki poprzez lutowanie przewodów z nowymi przewodami.
+  3. Kupowanie komponentów, które nie są nabyte (att_1)
 
 4. Zapoznanie się z silnikiem z "Kurs Arduino", stworzenie niezbędnego połączenia pomiędzy płytką Arduino, Powerbankiem, płytką stykową i silnikiem (att_2)
 att_2 przedstawia ideę podłączenia przewodów do Arduino. W naszym projekcie jest to trochę zmienione
