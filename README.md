@@ -1,7 +1,8 @@
 # Projekt samochodu 
 Opis projektu:
 Idea projektu narodziła się we wrześniu 2021 roku. Głównym celem było stworzenie samochodu, sterowanego przez bluetooth za pomocą Arduino. 
-W celach naukowych korzystałem ze źródeł takich jak: Kurs Arduinos Forbot oraz kanałów na Youtubie: Elektroprzewodnik, ElektroMaras
+W celach naukowych korzystałem ze źródeł takich jak: Kurs Arduinos Forbot oraz kanałów na Youtubie: Elektroprzewodnik, ElektroMaras.
+
 Cele poboczne: Projekty w C++, lutowanie i inne przydatne umiejętności.
 
 Cele i zamierzenia:
